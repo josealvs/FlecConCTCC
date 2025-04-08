@@ -97,6 +97,10 @@ def result(option, dataset, y_test, y_pred, path, labelled_level, rounds):
         2: "Comite_Tree_.csv",
         3: "Comite_KNN_.csv",
         4: "Comite_Heterogeneo_.csv",
+        5: "Comite_RandomForest_.csv",
+        6: "Comite_SVM_.csv",
+        7: "Comite_RegLog_.csv",
+
     }
 
     file_name = committee_files.get(option, "Comite_Heterogeneo_.csv")
@@ -135,6 +139,9 @@ def calculate_mean_stdev(
         2: "Comite_Tree_F.csv",
         3: "Comite_KNN_F.csv",
         4: "Comite_Heterogeneo_F.csv",
+        5: "Comite_RandomForest_F.csv",
+        6: "Comite_SVM_F.csv",
+        7: "Comite_RegLog_F.csv"
     }
 
     file_name = committee_files.get(option, "Comite_Heterogeneo_F.csv")
