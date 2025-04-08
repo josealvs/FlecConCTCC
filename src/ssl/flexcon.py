@@ -315,9 +315,6 @@ class BaseFlexConC(SelfTrainingClassifier):
         self,
         selected_full: list,
         selected: list,
-        local_acc: float,
-        init_acc: float,
-        max_proba: list[float],
         pred: list,
     ):
         """
@@ -338,12 +335,12 @@ class BaseFlexConC(SelfTrainingClassifier):
         self.transduction_[selected_full] = pred[selected]
         self.labeled_iter_[selected_full] = self.n_iter_
 
-        if selected_full.shape[0] > 0:
+        #if selected_full.shape[0] > 0:
             # no changed labels
-            self.new_threshold(local_acc, init_acc)
-            self.termination_condition_ = "threshold_change"
-        else:
-            self.threshold = np.max(max_proba)
+         #   self.new_threshold(local_acc, init_acc)
+          #  self.termination_condition_ = "threshold_change"
+        #else:
+         #   self.threshold = np.max(max_proba)
 
         if self.verbose:
             print(
