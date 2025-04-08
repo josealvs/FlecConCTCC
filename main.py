@@ -25,7 +25,7 @@ parser.add_argument(
     metavar='c',
     type=int,
     help='Escolha um classificador para criar um cômite.'
-        'Opções: 1 - Naive Bayes, 2 - Tree Decision, 3 - Knn, 4 - Heterogeneous'
+        'Opções: 1 - Naive Bayes, 2 - Tree Decision, 3 - Knn, 4 - Heterogeneous'  
 )
 parent_dir = "path_for_results"
 datasets_dir = "../FlexCon/datasets"
